@@ -1,0 +1,70 @@
+/* Import Tailwind CSS directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+.custom-button {
+  @apply bg-blue-950 text-white font-bold py-2 px-4 rounded;
+}
+
+/* Additional custom styles */
+header {
+  @apply bg-slate-900 text-white py-4;
+}
+
+header h1 {
+  @apply text-3xl font-pirata;
+}
+
+nav ul {
+  @apply flex space-x-4;
+}
+
+nav a {
+  @apply text-gray-700 hover:text-gray-900;
+}
+
+main {
+  @apply container mx-auto py-8 px-4;
+}
+
+section {
+  @apply mb-12;
+}
+
+section h2 {
+  @apply text-2xl font-almendra mb-4;
+}
+
+section p {
+  @apply text-gray-700;
+}
+
+form {
+  @apply space-y-4;
+}
+
+form label {
+  @apply block text-sm font-medium text-gray-700;
+}
+
+form input, form textarea {
+  @apply mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm;
+}
+
+form button {
+  @apply inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+}
+
+footer {
+  @apply bg-white shadow mt-12;
+}
+
+footer p {
+  @apply text-gray-700;
+}
+
+#band {
+  @apply h-48 w-48 object-cover rounded-full shadow-lg align-middle;
+}

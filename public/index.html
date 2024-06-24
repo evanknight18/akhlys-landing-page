@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akhlys Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&display=swap" rel="stylesheet">
+    <link href="../src/output.css" rel="stylesheet">
+</head>
+<body class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
+    <header class="bg-blue-950">
+        <div class="container mx-auto py-6 px-4 flex justify-between items-center">
+        
+            <div class="flex items-center space-x-4">
+                <img src="../public/images/Akhlys-Sigil.jpg" alt="Akhlys" class="h-24 w-24 rounded-full" id="logo">
+                <h1>Welcome to Akhlys</h1>
+        </div>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#about" class="text-gray-700 hover:text-gray-900">About</a></li>
+                    <li><a href="#services" class="text-gray-700 hover:text-gray-900">Services</a></li>
+                    <li><a href="#contact" class="text-gray-700 hover:text-gray-900">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-8 px-4">
+
+        <section id="hero" class="text-center mb-12 bg-blue-500 text-white py-20 rounded-lg">
+            <h2 class="text-4xl font-semibold mb-4">Exploring the Depths of Nightmares and Dreams Through Black Metal.</h2>
+            <div class="flex justify-center">
+            <img src="../public/images/Band-Pic.JPG" alt="Band-Pic" id="band">
+        </div>
+            <a href="#contact" class="custom-button bg-white text-blue-500">Get Started</a>
+        </section>
+
+        <section id="about" class="mb-12">
+            <h2 class="text-2xl font-semibold mb-4">About Us</h2>
+            <p class="text-gray-700">Akhlys is a black metal band known for their atmospheric and dark musical style. The band was formed by Naas Alcameth, who is also associated with other projects like Nightbringer and Bestia Arcana. Akhlys' music often delves into themes of dreams, nightmares, and the occult, creating a haunting and immersive listening experience. Their discography includes albums such as "The Dreaming I" and "Melinoë," which have been well-received in the black metal community for their complex compositions and evocative atmospheres.</p>
+        </section>
+
+        <section class="prose lg:prose-xl mb-12" id="discography">
+            <h2 class="text-2xl font-semibold mb-4">Discography</h2>
+            <ul class="list-disc pl-6">
+                <li>Supplication (2009)</li>
+                <li>Dreaming I (2015)</li>
+                <li>Melinoë (2020)</li>
+                <li>House of the Black Geminus (2024)</li>
+            </ul>
+        </section>
+
+        
+    </main>
+
+    <footer class="bg-red-950 shadow mt-12">
+        <div class="container mx-auto py-6 px-4 text-center">
+            <!-- Social Media Links -->
+            <div class="mb-6">
+                <a href="https://www.facebook.com" target="_blank" class="text-blue-600 mx-2"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="https://www.instagram.com" target="_blank" class="text-pink-600 mx-2"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://www.twitter.com" target="_blank" class="text-blue-400 mx-2"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://www.youtube.com" target="_blank" class="text-red-600 mx-2"><i class="fab fa-youtube fa-2x"></i></a>
+            </div>
+
+            <!-- Newsletter Signup -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-2">Subscribe to our Newsletter</h3>
+                <form class="flex flex-col md:flex-row justify-center space-y-2 md:space-y-0 md:space-x-2">
+                    <input type="email" placeholder="Enter your email" class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                    <button type="submit" class="custom-button bg-blue-500 text-white px-4 py-2 rounded-md">Subscribe</button>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <section id="contact">
+                <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
+                <form class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Name:</label>
+                        <input type="text" id="name" name="name" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    </div>
+    
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email:</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    </div>
+    
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message:</label>
+                        <textarea id="message" name="message" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+                    </div>
+    
+                    <div>
+                        <button type="submit" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Send Message</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Copyright -->
+            <p class="text-gray-700 mt-6">&copy; 2024 Akhlys. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
